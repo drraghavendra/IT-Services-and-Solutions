@@ -1,4 +1,4 @@
-#IT SERVICES AND SOLUTIONS
+#ITSERVICESANDSOLUTIONS
 
 
 Objective : To develop an AI model that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of IT services and solutions.
