@@ -1,4 +1,4 @@
-# Lord
+#IT SERVICES AND SOLUTIONS
 
 
 Objective : To develop an AI model that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of IT services and solutions.
@@ -38,7 +38,7 @@ NodeJS
 JavaScript
 
 ====File Structure====
-AOTMP
+
   -APIS (Having APIs for user LogIn/ SignUp Data)
     -env (Python Environment)
     -credentials ( Static Database for Credentials for Demo ) 
