@@ -1,7 +1,7 @@
 # Lord
 
 
-Objective : To develop an AI model that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of telecom, mobility, and IT services and solutions.
+Objective : To develop an AI model that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of IT services and solutions.
 
 Implementation : The complete model architecture and training process is based on federated learning and semi supervised mode of training each client model this helps to capture new variants of data also.
 
@@ -9,7 +9,7 @@ Applications : The model trained has wide range of applications and is applicabl
 
 Problem Statement:
 IT products and services are evolving constantly at a high pace. High complexity in selecting suitable products for business use case. SMBs ( Small Mid-Sized Business often lack human resource to cope up with selection complexity.
-     1)How do SMBs more easily and efficiently sort out the thousands of options available to them?  2)How to build tools that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of telecom, mobility, and IT services and solutions.
+     1)How do SMBs more easily and efficiently sort out the thousands of options available to them?  2)How to build tools that help SMBs find verified solutions to simplify the sourcing, evaluation, and selection of  IT services and solutions.
 Moving towards industry 4.0 leads to booming increase in IT services build Finding a service for particular business is like finding a pin in sand heap.
 SMBs find it really challenging and time consuming to select a service best suited for them. Data leaks due to centralized database storage.
 Lack of AI powered solutions.
