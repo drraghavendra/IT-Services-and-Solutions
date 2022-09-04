@@ -32,3 +32,77 @@ Business Stand Point
 
 Human Intervention is not required from SMBs end. Quicker decision making process. SMBs are able to work and cost cutting is there by getting recommendations on there best needs. SMBs can work on new tech and spend more time on developing the idea rather than thinking about the products and services. The recommendation system can be used as a SaaS service itself to a wide range of people ranging from individuals to MNCs. System is very much secured hence building trust is easily facilitated.
 
+====Requirements====
+Python
+NodeJS
+JavaScript
+
+====File Structure====
+AOTMP
+  -APIS (Having APIs for user LogIn/ SignUp Data)
+    -env (Python Environment)
+    -credentials ( Static Database for Credentials for Demo ) 
+       credentils file
+    - main ( Main File having APIs for LogIn, Sign Up)
+  
+  -FL Models ( Files to train the model using Federated Learning )
+    -CreateDataset.ipynb ( To create the generic real world dataset)
+    -FederatedLearning.ipynb ( To train the model using FL )
+    -mnistAlpha_FL_0_1.ipynb ( To Analyse the Pseudolabeling Semi Supervised Classification Result)
+    -restApiProduct.ipynb   ( To create Endpoints for Service/Product Recommendation System)
+  -public (To store the trained models)
+     -models (Trained models)
+
+  -server (GraphQL Server for SignUp /LogIn)
+     -src
+       -datasources (Datasources Components for APIs)
+       --graphql (Resolvers and schemas for APIS)
+
+  src ( Front End using React and Node JS)
+   -apis ( APIs for Product Recommendation System )
+     -main.ipynb
+  -assests (Common Image files used )
+     - many image files
+  -components ( Components for the UI)
+     -Efficiency
+     -EfficiencyResult
+     -Footer
+     -Recomendation
+     -SimilarFeature
+     -SimilarProduct
+     -SimilarRating
+   -dataset ( Dataset for the Produts/ Services)
+     -dataset.csv
+     -dataset.json
+   -pages (UI Pages)
+     - pages for different screens
+   -services (Service)
+     -ProductService
+
+
+====File Description====
+
+==Backend (Python) ===
+CreateDataset.ipynb: This notebook creates a synthetic dataset which we have used in our backend and training of the machine learning model under Federated Settings
+
+FederatedLearning.ipynb: This notebook explains the Exploratory Data Analysis and overall training of the global model with client models under Federated Settings. Four models each for Security, Scalability, Ease Of Use, Latency are trained under Federated Settings.
+
+mnistAlpha_0.1_FL.ipynb: This notebook is an example of how pseudo labellings can be used in our problem statement to introduce semi-supervised learning with only 10% labelled data.
+
+==Frontend (React code base) ===
+
+Please follow these commands to create react project and install required nodejs dependencies.
+npx create-react-app fl-aotmp            =>  Create the project
+
+npm install bootstrap --save             =>  Install Bootstrap
+
+npm intall react-router-dom              =>  For Router, Switch
+
+< Install Other required Dependencies >
+
+npm start
+
+restApiProduct.ipynb                  =>     Host api end points as server using colab
+
+
+=> Copy Generated Public URL and enter in  PRODUCT_API_BASE_URL  in services/ProductsService.js  file.  Eg : const PRODUCT_API_BASE_URL = "http://9d78-34-86-177-191.ngrok.io";
